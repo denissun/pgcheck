@@ -1,7 +1,6 @@
 *******************************************************************************
 * pgcheck.py is a program to report various PostgreSQL database info for DBA
 *
-*
 * some python packages required:
 *
 *       pip install psycopg2-binary
@@ -33,7 +32,7 @@ database.ini  ( containing password,  readonly by owner : 600)
         [postgresql]
         host=abcdeg.us-east-1.rds.amazonaws.com
         port=5432
-        database=vvoprdtp
+        database=mydb
         user=username
         password=xxxx
 
