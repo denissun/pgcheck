@@ -1,3 +1,6 @@
+# Purpose
+
+```
 /********************************************************************************
 * pgcheck.py is a program to report various PostgreSQL database info for DBA
 *
@@ -13,7 +16,9 @@
 *
 *******************************************************************************/*
 
-== program files:
+```
+
+# Program files:
 
 pgcheck.py
 config.py
@@ -39,9 +44,11 @@ database.ini  ( containing password,  readonly by owner : 600)
 
       note: if password not in the int file, you will be prompted to enter password
 
-=== usage
-        Specify  -h to get help message
+# Usage
 
+* Specify  -h to get help message
+
+```
 
         [username@123-456-7-89 pycheck]$ python pgcheck.py -h
         usage: pgcheck.py [-h] [-c] [-a] [-ps] [-v] [-we] [DBConfigFile]
@@ -58,14 +65,19 @@ database.ini  ( containing password,  readonly by owner : 600)
           -a, --active_session  Display active session
           -ps, --pg_settings    Display PG settings
           -v, --version         Display PG version
-          -we, --wait_event     Display Session wait event count
 
+         -we, --wait_event     Display Session wait event count
+```
 
-        -- use a DBconfigFile called db.ini
+* Use a DBconfigFile called db.ini
+  
         pgcheck.py -c  db.ini
 
 
-        -- In the following case the default DBconfigFile called database.ini is used
-        pgcheck.py -c
+* Default
+  
+  In the following case the default DBconfigFile called database.ini is used
+
+  pgcheck.py -c
 
 
